@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Homepage</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        h1 {
+            padding-top: 90px;
+            font-size: 80px;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 30px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            padding-top: 50px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding: 80px;
+            border: 10px;
+        }
+
+        .button {
+            font-size: 50px;
+            padding: 30px;
+            transition: transform .2s;
+
+        }
+
+        .button a {
+            display: block;
+            background-color: lightsalmon;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            border-color: black;
+        }
+
+        .button:hover {
+            -ms-transform: scale(1.07); 
+            -webkit-transform: scale(1.07); 
+            transform: scale(1.07); 
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 50px;
+                padding-top: 30px;
+            }
+            p {
+                font-size: 30px;
+                padding: 5px;
+            }
+
+            .buttons {
+                display: flex;
+                padding-top: 5px;
+            }
+
+            .button {
+                font-size: 40px;
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script id="replace_with_navbar" src="nav.js"></script>
+    <div class="container">
+        <h1>Welcome to Group One's Blog Site!</h1>
+        <br>
+        <p>This is a website designed to hold our literature review for Karl Gabrielle De Los Santos' essay "Hindi Ko Alam"</p>
+        <br>
+        <div class="buttons">
+            <div class="button">
+                <a href="blog.html">Our Blog</a>
+            </div>
+            <div class="button">
+                <a href="aboutus.html">About Us</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

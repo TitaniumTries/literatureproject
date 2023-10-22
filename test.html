@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fullscreen Background Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            text-align: center;
+            color: #ffffff;
+            padding: 100px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        #replace_with_navbar {
+            background-color: #ffffff;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 60px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 40px 0;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script id="replace_with_navbar" src="nav.js"></script>
+    <div class="content">
+        <h1>Welcome to the Fullscreen Background Page</h1>
+        <p>This is a fully responsive page with a fullscreen background image.</p>
+    </div>
+</body>
+</html>
